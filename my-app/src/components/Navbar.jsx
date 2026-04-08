@@ -19,7 +19,10 @@ function Navbar() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("currentUser"); // correct key
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("user");
+    localStorage.removeItem("email");
+    localStorage.removeItem("password");
     navigate("/login");
   };
 
