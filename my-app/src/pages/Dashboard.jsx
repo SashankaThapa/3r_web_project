@@ -29,6 +29,9 @@ export default function Dashboard() {
 
   const handleLogout = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("email");
+    localStorage.removeItem("password");
+    localStorage.removeItem("currentUser");
     navigate("/login");
   };
 
