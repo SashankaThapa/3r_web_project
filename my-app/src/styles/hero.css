@@ -1,0 +1,32 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  color: white;
+  overflow: hidden;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+}
+
+.hero-text button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #00c853;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  transform: scale(1.1);
+}
+
+.hero-img {
+  width: 400px;
+}

@@ -1,0 +1,14 @@
+/* ✅ SAFE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ FIX WHITE SPACE WITHOUT BREAKING SCROLL */
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* DO NOT set height: 100% here */

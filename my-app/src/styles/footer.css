@@ -1,0 +1,35 @@
+.footer {
+  background: linear-gradient(135deg, #0f2027, #1b5e20);
+  padding: 40px 20px 20px;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #00c853;
+}
+
+.footer-socials span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}

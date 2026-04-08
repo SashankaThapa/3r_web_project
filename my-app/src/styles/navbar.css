@@ -1,0 +1,170 @@
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  font-size: 22px;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* LINKS STYLE */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+/* UNDERLINE ANIMATION */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: #00e676;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK */
+.active::after {
+  width: 100% !important;
+}
+
+/* PROFILE */
+.profile {
+  margin-left: 10px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* ===== PROFILE DROPDOWN UPGRADE ===== */
+/* PROFILE */
+.profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ICON */
+.profile-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* 🔥 HOVER BRIDGE (THIS FIXES THE ISSUE) */
+.profile::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 15px; /* invisible bridge */
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 100%; /* no gap now */
+  right: 0;
+
+  margin-top: 10px; /* visual spacing but still connected */
+
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(12px);
+
+  border-radius: 12px;
+  min-width: 160px;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: 0.25s ease;
+}
+
+/* SHOW */
+.profile:hover .dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* ITEMS */
+.dropdown a,
+.dropdown span {
+  padding: 12px 15px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown a:hover,
+.dropdown span:hover {
+  background: rgba(0, 255, 204, 0.2);
+}
+
+/* USERNAME */
+.username {
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  .profile:hover .dropdown {
+    display: none; /* disable hover on mobile */
+  }
+
+  .dropdown {
+    position: static;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    box-shadow: none;
+    background: transparent;
+  }
+}

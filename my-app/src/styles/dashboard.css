@@ -1,0 +1,118 @@
+/* ===== PAGE ===== */
+.dashboard {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.dashboard-header h1 {
+  color: #00ffcc;
+}
+
+.dashboard-header button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  cursor: pointer;
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+}
+
+.stat-card h3 {
+  color: #00ffcc;
+}
+
+/* ===== HISTORY ===== */
+.history {
+  max-width: 800px;
+  margin: auto;
+}
+
+.history h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+/* ATTEMPT CARD */
+.attempt-card {
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.attempt-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+
+.attempt-header:hover {
+  background: rgba(0,255,204,0.1);
+}
+
+.score {
+  color: #00ffcc;
+}
+
+/* DETAILS */
+.attempt-details {
+  padding: 15px;
+  text-align: left;
+}
+
+/* QUESTION REVIEW */
+.question-review {
+  margin-bottom: 15px;
+}
+
+/* COLORS */
+.correct {
+  color: #00ffcc;
+}
+
+.wrong {
+  color: #ff4d4d;
+}
